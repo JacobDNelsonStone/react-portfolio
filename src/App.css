@@ -34,7 +34,7 @@
 
 .Hero {
   background-image: url('./images/herobg.jpg');
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .LightBlue {
@@ -49,7 +49,7 @@
   background-color: rgb(247, 37, 133);
 }
 
-.DarkBlue{
+.DarkBlue {
   background-color: rgb(58, 12, 163);
 }
 
@@ -58,13 +58,41 @@
 }
 
 .footer {
-  bottom: 0px;
+  position: absolute;
+  bottom: 0;
+}
+
+.Active {
+  color: black !important;
+  background-color: azure;
+  border-radius: 16px;
+  animation: fadeIn 1s;
+}
+
+.Rounded {
+  border-radius: 16px;
+
+}
+
+.FillWidth {
+  min-width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

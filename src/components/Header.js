@@ -7,16 +7,20 @@ import '../App.css'
 function Header(props) {
 
   return (
-    <Navbar expand="lg" variant="dark" className='DarkBlue py-5 mb-5'>
+    <Navbar expand="lg" variant="dark" className='DarkBlue py-5 mb-5 '>
       <Container>
         <Navbar.Brand href="#home" className='Light' style={{ fontSize: '2rem'}}>Jacob Nelson-Stone</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#aboutMe" className='Light'>About Me</Nav.Link>
-            <Nav.Link href="#portfolio" className='Light'>Portfolio</Nav.Link>
-            <Nav.Link href="#contact" className='Light'>Contact</Nav.Link>
-            <Nav.Link href="#resume" className='Light'>Resume</Nav.Link>
+          <Nav className="me-auto d-flex justify-content-around">
+
+            <Nav.Link href="/AboutMe" className={ window.location.href.includes("/AboutMe") ?"Light Active" : "Light" }>About Me</Nav.Link>
+
+            <Nav.Link href="/Portfolio" className={ window.location.href.includes("/Portfolio") ?"Active" : "Light" }>Portfolio</Nav.Link>
+
+            <Nav.Link href="/Contact" className={ window.location.href.includes("/Contact") ?"Active" : "Light" }>Contact</Nav.Link>
+
+            <Nav.Link href="/Resume" className={ window.location.href.includes("/Resume") ?"Active" : "Light" }>Resume</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -12,9 +12,9 @@ function Contact(props) {
   // }
 
   return (
-    <center><div className='pb-2 LightBlue'>
+    <div className='pb-2 LightBlue Rounded col-xl-5 col-sm-8 px-3 ms-5'>
       <h1>Contact Me</h1>
-      <Form className='col-5 '>
+      <Form className=''>
         <Form.Group className="mb-3" controlId="formBasicFName">
           <Form.Label>First Name</Form.Label>
           <Form.Control type="first-name" placeholder="Enter your first name" />
@@ -33,11 +33,11 @@ function Contact(props) {
           <Form.Text className="text-muted">
           </Form.Text>
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="dark" type="submit">
           Submit
         </Button>
       </Form>
-    </div></center>
+    </div>
   )
 }
 

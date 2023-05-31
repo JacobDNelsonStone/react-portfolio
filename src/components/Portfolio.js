@@ -10,7 +10,7 @@ function Portfolio(props) {
     <Container >
       <Row>
         <Card className="Blue">
-
+          
         </Card>
       </Row>
     </Container>
