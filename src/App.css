@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+.Light {
+  color: white;
+}
+
+.Hero {
+  background-image: url('./images/herobackground.jpg');
+  clip: rect(0, 1000px, 200px, 0);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
