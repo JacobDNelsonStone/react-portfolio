@@ -71,11 +71,23 @@
 
 .Rounded {
   border-radius: 16px;
+}
 
+.card {
+  background-color: rgb(247, 37, 133) !important;
+}
+
+.border-primary {
+  background-color: rgb(58, 12, 163);
 }
 
 .FillWidth {
-  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.nodecor {
+  text-decoration: none;
 }
 
 @keyframes fadeIn {
