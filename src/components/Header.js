@@ -7,7 +7,7 @@ import '../App.css'
 function Header(props) {
 
   return (
-    <Navbar expand="lg" variant="dark" className='Hero py-5 '>
+    <Navbar expand="lg" variant="dark" className='DarkBlue py-5 mb-5'>
       <Container>
         <Navbar.Brand href="#home" className='Light' style={{ fontSize: '2rem'}}>Jacob Nelson-Stone</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

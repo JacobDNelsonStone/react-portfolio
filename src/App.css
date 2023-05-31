@@ -33,8 +33,32 @@
 }
 
 .Hero {
-  background-image: url('./images/herobackground.jpg');
-  clip: rect(0, 1000px, 200px, 0);
+  background-image: url('./images/herobg.jpg');
+  object-fit: fill;
+}
+
+.LightBlue {
+  background-color: rgb(76, 201, 240);
+}
+
+.Purple {
+  background-color: rgb(114, 9, 183);
+}
+
+.Pink {
+  background-color: rgb(247, 37, 133);
+}
+
+.DarkBlue{
+  background-color: rgb(58, 12, 163);
+}
+
+.Blue {
+  background-color: rgb(67, 97, 238);
+}
+
+.footer {
+  bottom: 0px;
 }
 
 @keyframes App-logo-spin {
