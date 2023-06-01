@@ -16,7 +16,7 @@ function App() {
   //   });
   // }, []);
   return (
-    <div className='Hero vh-100'>
+    <div className='vh-100 scroll'>
       <Header />
       {window.location.href.includes("/Contact") && (
         <Contact />

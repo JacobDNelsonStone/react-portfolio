@@ -10,7 +10,7 @@ import gp1Logo from '../images/gp1-logo.png'
 function Portfolio(props) {
 
   return (
-    <div className="mw-100 mx-1">
+    <div className="mw-100 mx-1 portfolio">
       <Container className="col-12 d-flex flex-wrap  justify-content-between">
         <Row className=" my-4 col-xl-4">
           <Project repo="https://github.com/JacobDNelsonStone/pwa-text-editor" image={jateSC} deplo="https://pwa-text-editor-jacobns.herokuapp.com/" title="Just-Another-Text-Editor PWA">
