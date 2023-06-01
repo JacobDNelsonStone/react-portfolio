@@ -7,7 +7,7 @@ function Footer(props) {
 
   return (
 
-    <Container className='mt-5 footer Purple Light py-5 mx-0' style={{minWidth: '100%'}}>
+    <Container className='mt-5 footer Purple Light py-2 mx-0' style={{minWidth: '100%'}}>
       <Navbar expand="lg">
         <Container>
           <Navbar.Brand href="#home" className='Light' style={{ fontSize: '2rem' }}>Jacob Nelson-Stone</Navbar.Brand>

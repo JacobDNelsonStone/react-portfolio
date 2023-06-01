@@ -33,8 +33,9 @@
 }
 
 .Hero {
-  background-image: url('./images/herobg.jpg');
-  object-fit: contain;
+  background-image: url('./images/herobackground.jpg');
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .LightBlue {
@@ -50,7 +51,7 @@
 }
 
 .DarkBlue {
-  background-color: rgb(58, 12, 163);
+  background-color: rgb(58, 12, 163) !important;
 }
 
 .Blue {
@@ -58,8 +59,14 @@
 }
 
 .footer {
-  position: absolute;
+  position: -ms-page;
   bottom: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .Active {
@@ -69,8 +76,19 @@
   animation: fadeIn 1s;
 }
 
+.ActiveLink::hover {
+  color: black !important;
+  background-color: azure !important;
+  border-radius: 16px !important;
+  animation: fadeIn 1s !important;
+}
+
 .Rounded {
   border-radius: 16px;
+}
+
+.RoundedLess {
+  border-radius: 12px;
 }
 
 .card {
@@ -82,8 +100,9 @@
 }
 
 .FillWidth {
-  max-width: 100%;
-  height: auto;
+  max-width: 95%;
+  height: 300px;
+  border-radius: 24px;
 }
 
 .nodecor {
@@ -92,11 +111,11 @@
 
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: 0 !important;
   }
 
   100% {
-    opacity: 1;
+    opacity: 1 !important;
   }
 }
 

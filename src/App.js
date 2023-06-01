@@ -1,6 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Contact, Portfolio, Project, AboutMe, Footer, Header } from './components';
+import { Contact, Portfolio, AboutMe, Footer, Header } from './components';
+import Resume from './components/Resume';
 import { useEffect, useState, useRef } from 'react';
 
 function App() {
@@ -26,9 +27,9 @@ function App() {
       {window.location.href.includes("/Portfolio") && (
         <Portfolio />
       )}
-      {/* {window.location.href.includes("/Resume") && (
+      {window.location.href.includes("/Resume") && (
         <Resume />
-      )} */}
+      )}
       <Footer className="mt-2" />
     </div>
   );
