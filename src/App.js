@@ -17,9 +17,13 @@ function App() {
     const page = pageArr.splice(1, 1)
     console.log(page[0])
     if (page[0] === '/') {
+      console.log("we got here")
       setSection('/AboutMe')
-    }
-    setSection(page[0])
+      console.log("setting section", section)
+    } 
+      
+    // setSection(page[0])
+    
   }, [window.location.href])
 
   console.log(section)
