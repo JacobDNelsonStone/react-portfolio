@@ -4,8 +4,10 @@ import Container from "react-bootstrap/Container";
 import Project from "./Project";
 import jateSC from '../images/logo.png';
 import gp2SC from '../images/gp2-sc.png';
-import gp1Logo from '../images/gp1-logo.png'
-
+import gp1Logo from '../images/gp1-logo.png';
+import sqlCLI from '../images/unit-12-homework-sc.png';
+import weatherApiSC from '../images/weatherapisc.png'
+import reactportfolioSC from '../images/react-portfolio.png';
 
 function Portfolio(props) {
 
@@ -25,15 +27,15 @@ function Portfolio(props) {
           </Project>
         </Row>
         <Row className=" my-4 col-xl-4 ">
-          <Project repo="github.com/repo" image="path_to_image" deplo="deployed.com" title="project_title">
+          <Project repo="https://github.com/JacobDNelsonStone/sql-employee-tracker-cl-app" image={sqlCLI} deplo="https://github.com/JacobDNelsonStone/sql-employee-tracker-cl-app#readme" title="SQL Database Employee Tracker (CMS) ">
           </Project>
         </Row>
         <Row className=" my-4 col-xl-4 ">
-          <Project repo="github.com/repo" image="path_to_image" deplo="deployed.com" title="project_title">
+          <Project repo="https://github.com/JacobDNelsonStone/open-weather-api-web-app" image={weatherApiSC} deplo="https://jacobdnelsonstone.github.io/open-weather-api-web-app/" title="5-Day Weather Forecast Dashboard">
           </Project>
         </Row>
         <Row className=" my-4 col-xl-4">
-          <Project repo="github.com/repo" image="path_to_image" deplo="deployed.com" title="project_title">
+          <Project repo="https://github.com/JacobDNelsonStone/react-portfolio" image={reactportfolioSC} deplo="deployed.com" title="React.JS Portfolio">
           </Project>
         </Row>
       </Container>

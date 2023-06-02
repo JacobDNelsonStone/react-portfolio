@@ -13,7 +13,7 @@ function Project({ children, title, image, repo, deplo }) {
         </a>
         <br></br>
         <CardHeader className="RoundedLess pt-2 fw-bolder fs-4" >{title}</CardHeader>
-        <center><Button href={deplo} className="DarkBlue mt-2" >Deployed Application</Button></center>
+        <center><Button href={deplo} className="DarkBlue mt-2 ActiveLink NoOutline" >Deployed Application</Button></center>
       </div>
     </Card>
 

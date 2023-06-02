@@ -87,13 +87,17 @@
 }
 
 .aboutmepic {
-  width: 80%;
+  width: 75%;
   height: auto;
-
 }
 
 .scroll {
   overflow-y: scroll;
+  
+}
+
+body {
+  scroll-behavior: smooth;
 }
 
 .Active {
@@ -103,11 +107,17 @@
   animation: fadeIn 1s;
 }
 
-.ActiveLink::hover {
+.NoOutline {
+  outline: none !important;
+  outline-offset: none !important;
+
+}
+
+.ActiveLink:hover {
   color: black !important;
   background-color: azure !important;
   border-radius: 16px !important;
-  animation: fadeIn 1s !important;
+  animation: fadeIn 5s !important;
 }
 
 .Rounded {
