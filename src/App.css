@@ -146,6 +146,25 @@ body {
   text-decoration: none;
 }
 
+/* @media screen and (max-width: 576px) {
+  .HeroImage {
+    background-image: url('./images/herobackground.jpg');
+    background-size: cover;
+    position: fixed;
+    top: 180px;
+    width: 100vw;
+    height: 100vh;
+    
+    transform: rotate(90deg);
+  }
+} */
+
+@media screen and (max-width: 576px) {
+  .marginBottom {
+    margin-bottom: 300px;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0 !important;

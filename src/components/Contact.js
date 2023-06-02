@@ -5,26 +5,30 @@ import { useState, useEffect } from 'react';
 
 
 function Contact(props) {
-  const defForm = { email: "", fname: '', lname: "" }
+  let defForm = { email: "", fname: '', lname: "" }
   const [formData, setFormData] = useState(defForm)
 
   const handleInputChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
+    console.log(formData)
   }
 
   const handleFormSubmit = async (e) => {
     e.preventDefault()
-    console.log(e.target)
-
+    console.log(defForm)
+    // if() {
+    //   alert("all form fields must be filled out :)")
+    // }
   }
 
   return (
-    <div className='pb-2 LightBlue Rounded col-xl-5 col-sm-8 px-3 ms-5'>
+    <div className='pb-2 LightBlue Rounded col-xl-6 col-11 px-3 ms-3'>
       <h1>Contact Me</h1>
       <Form className=''>
         <Form.Group className="mb-3" controlId="formBasicFName">
           <Form.Label>First Name</Form.Label>
           <Form.Control
+            required
             type="first-name"
             name="fname"
             value={formData.fname}
@@ -36,25 +40,31 @@ function Contact(props) {
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicLName">
           <Form.Label>Last Name</Form.Label>
-          <Form.Control 
-            type="last-name" 
+          <Form.Control
+            required
+            type="last-name"
             name="lname"
             value={formData.lname}
-            placeholder="Enter your last name" />
+            placeholder="Enter your last name"
+            onChange={handleInputChange}
+          />
           <Form.Text className="text-muted">
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control 
-            type="email" 
+          <Form.Control
+            required
+            type="email"
             name="email"
             value={formData.email}
-            placeholder="Enter email" />
+            placeholder="Enter email"
+            onChange={handleInputChange}
+          />
           <Form.Text className="text-muted">
           </Form.Text>
         </Form.Group>
-        <Button variant="dark" type="submit" onClick={handleFormSubmit}>
+        <Button className='DarkBlue mt-2 ActiveLink NoOutline' type="submit" onClick={handleFormSubmit}>
           Submit
         </Button>
       </Form>

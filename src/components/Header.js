@@ -31,10 +31,10 @@ function Header(props) {
               {/* <Nav.Link href="/Contact" className={ window.location.href.includes("/Contact") ?"Active" : "Light" }>Contact</Nav.Link> */}
               {/* <Nav.Link href="/Resume" className={ window.location.href.includes("/Resume") ?"Active" : "Light" }>Resume</Nav.Link> */}
 
-              <MyLink page="AboutMe">About Me</MyLink>
-              <MyLink page="Portfolio" />
-              <MyLink page="Contact" />
-              <MyLink page="Resume" />
+              <MyLink className="px-2" page="AboutMe">About Me</MyLink>
+              <MyLink className="px-2" page="Portfolio" />
+              <MyLink className="px-2" page="Contact" />
+              <MyLink className="px-2" page="Resume" />
             </Nav>
           </Navbar.Collapse>
         </Container>

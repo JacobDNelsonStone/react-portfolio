@@ -1,7 +1,7 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Contact, Portfolio, AboutMe, Footer, Header } from './components';
-import Resume from './components/Resume';
+import Resume from './components/Resume'
 import { useEffect, useState, useRef } from 'react';
 
 function App() {
