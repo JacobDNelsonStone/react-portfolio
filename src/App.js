@@ -1,7 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Contact, Portfolio, AboutMe, Footer, Header } from './components';
-import Resume from './components/Resume'
+import { Contact, Portfolio, AboutMe, Footer, Header, Resume } from './components';
 import { useEffect, useState, useRef } from 'react';
 
 function App() {
@@ -20,10 +19,9 @@ function App() {
       console.log("we got here")
       setSection('/AboutMe')
       console.log("setting section", section)
-    } 
-      
-    // setSection(page[0])
-    
+    } else {
+      setSection(page[0])
+    }
   }, [window.location.href])
 
   console.log(section)
