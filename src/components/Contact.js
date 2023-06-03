@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 
 
 function Contact(props) {
-  let defForm = { email: "", fname: '', lname: "" }
+  let defForm = { email: "", fname: '', lname: "", message: '' }
   const [formData, setFormData] = useState(defForm)
 
   const handleInputChange = (e) => {
@@ -15,10 +15,14 @@ function Contact(props) {
 
   const handleFormSubmit = async (e) => {
     e.preventDefault()
-    console.log(defForm)
-    // if() {
-    //   alert("all form fields must be filled out :)")
-    // }
+    console.log(formData)
+    console.log('==========', formData.message)
+    
+    if( formData.email == '' || formData.fname == ''  || formData.lname == ''  || formData.message == '' ) {
+      alert("all form fields must be filled out :)")
+    } else {
+      alert('Thank you for submitting your contact info!')
+    }
   }
 
   return (
@@ -52,13 +56,26 @@ function Contact(props) {
           </Form.Text>
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+          <Form.Label>Email Address</Form.Label>
           <Form.Control
             required
             type="email"
             name="email"
             value={formData.email}
             placeholder="Enter email"
+            onChange={handleInputChange}
+          />
+          <Form.Text className="text-muted">
+          </Form.Text>
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicMessage">
+          <Form.Label>Send a Short Info Message</Form.Label>
+          <Form.Control
+            required
+            type="text"
+            name="message"
+            value={formData.message}
+            placeholder="Enter a short message with your inquiry"
             onChange={handleInputChange}
           />
           <Form.Text className="text-muted">

@@ -1,7 +1,8 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Contact, Portfolio, AboutMe, Footer, Header, Resume } from './components';
+import { Contact, Portfolio, AboutMe, Footer, Header } from './components';
 import { useEffect, useState, useRef } from 'react';
+import Resume from './components/Resume';
 
 function App() {
   const [section, setSection] = useState('');
@@ -38,7 +39,7 @@ function App() {
         <Portfolio />
       )}
       {section === "/Resume" && (
-        <Resume />
+       <Resume />
       )}
       <Footer className="mt-2" />
     </div>

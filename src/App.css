@@ -1,3 +1,7 @@
+* {
+  font-family: Helvetica;
+}
+
 .App {
   text-align: center;
 }
@@ -33,12 +37,13 @@
 }
 
 .Hero {
-  background-image: url('./images/herobackground.jpg');
+  /* background-image: url('./images/herobackground.jpg');
   background-size: cover;
   position: fixed;
   top: 180px;
   width: 100%;
-  height: 100%;
+  height: 100%; */
+  background-color: rgb(28, 28, 28);
 }
 
 .portfolio {
@@ -46,6 +51,7 @@
 }
 
 .bodypadding {
+  padding-top: 150px;
   padding-bottom: 100px;
 }
 
@@ -93,7 +99,6 @@
 
 .scroll {
   overflow-y: scroll;
-  
 }
 
 body {
@@ -144,13 +149,6 @@ body {
 
 .nodecor {
   text-decoration: none;
-}
-
-@media screen and (max-width: 576px) {
-  body .DarkBlue{
-    background-color:rgb(58, 58, 58)!important;
-    
-  }
 }
 
 @media screen and (max-width: 576px) {

@@ -7,7 +7,7 @@ import gp2SC from '../images/gp2-sc.png';
 import gp1Logo from '../images/gp1-logo.png';
 import sqlCLI from '../images/unit-12-homework-sc.png';
 import weatherApiSC from '../images/weatherapisc.png'
-import reactportfolioSC from '../images/react-portfolio.png';
+import reactportfolioSC from '../images/react-portfolio-sc.png';
 
 function Portfolio(props) {
 
