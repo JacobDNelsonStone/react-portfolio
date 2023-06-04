@@ -16,7 +16,7 @@ function App() {
     console.log(pageArr)
     const page = pageArr.splice(1, 1)
     console.log(page[0])
-    if (page[0] === '/') {
+    if (!page[0] === '/AboutMe') {
       console.log("we got here")
       setSection('/AboutMe')
       console.log("setting section", section)
