@@ -5,13 +5,13 @@ function Resume() {
   // const docs = [{ uri: require("../jacobnelsonstoneresume.pdf") }];
 
   function handleButtonClick() {
-    fetch('jacobnelsonstoneresume.pdf')
+    fetch('jacobdnelsonstoneresume.pdf')
       .then(response => {
         response.blob().then(resume => {
           const fileURL = window.URL.createObjectURL(resume);
           let alink = document.createElement('a');
           alink.href = fileURL;
-          alink.download = 'MyResume.pdf';
+          alink.download = 'Jacob Nelson-Stone Resume.pdf';
           alink.click();
         })
       })
