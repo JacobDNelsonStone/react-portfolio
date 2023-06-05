@@ -7,6 +7,7 @@ import '../App.css'
 const MyLink = ({ page, children }) => {
   const pageIsActive = (page) => window.location.href.includes(page)
   const getClassName = (page) => pageIsActive(page) ? "Active" : "Light"
+ 
 
   return (
     <Nav.Link href={`/${page}`} className={getClassName(page)} style={{paddingLeft: '0.5rem', paddingRight: '0.5rem'}}>

@@ -14,14 +14,14 @@ function App() {
     console.log(paths)
     const page = window.location.pathname
     console.log(page)
-    if (!page === '/AboutMe') {
+    if (!paths.includes(page)) {
       console.log("we got here")
       setSection('/AboutMe')
       console.log("setting section" + section)
     } else {
       setSection(page)
     }
-  }, [window.location])
+  }, [window.location.href])
 
   console.log(section)
   return (
