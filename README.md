@@ -10,4 +10,4 @@ To run this app, simply click on the link at the bottom of the README file. If y
 
 ## Links
 
-[Here's the link to the live web app!](https://JacobDNelsonStone.github.io/react-portfolio/AboutMe)
+[Here's the link to the live web app!](https://react-portfolio-jacobns.herokuapp.com/AboutMe)
