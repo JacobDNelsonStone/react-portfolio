@@ -1,17 +1,20 @@
 import { Button, Container, Row } from "react-bootstrap"
 // import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
+// import myResume from '../843F6127-6EB2-45EC-B015-63DDD6F643F3.pdf';
 
 function Resume() {
   // const docs = [{ uri: require("../jacobnelsonstoneresume.pdf") }];
 
   function handleButtonClick() {
-    fetch('jacobdnelsonstoneresume.pdf')
+    fetch('843F6127-6EB2-45EC-B015-63DDD6F643F3.pdf')
       .then(response => {
+        console.log(response)
         response.blob().then(resume => {
           const fileURL = window.URL.createObjectURL(resume);
           let alink = document.createElement('a');
           alink.href = fileURL;
           alink.download = 'Jacob Nelson-Stone Resume.pdf';
+          console.log(alink)
           alink.click();
         })
       })
