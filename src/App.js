@@ -8,22 +8,20 @@ function App() {
   const [section, setSection] = useState('');
   // const ref = useRef();
   console.log(section);
+
   useEffect(() => {
     const paths = ["/Contact", "/AboutMe", "/Portfolio", "/Resume"]
     console.log(paths)
-    const url = window.location.href.replace(/^http(s?):\/\//i, "");
-    const pageArr = url.split(window.location.host)
-    console.log(pageArr)
-    const page = pageArr.splice(1, 1)
-    console.log(page[0])
-    if (!page[0] === '/AboutMe') {
+    const page = window.location.pathname
+    console.log(page)
+    if (!page === '/AboutMe') {
       console.log("we got here")
       setSection('/AboutMe')
-      console.log("setting section", section)
+      console.log("setting section" + section)
     } else {
-      setSection(page[0])
+      setSection(page)
     }
-  }, [window.location.href])
+  }, [window.location])
 
   console.log(section)
   return (

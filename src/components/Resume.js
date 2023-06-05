@@ -20,7 +20,7 @@ function Resume() {
   return (
     <Container className="col-xl-10 Blue Rounded py-5 px-5" style={{ color: 'black'}}>
       <Row>
-        <h1 className="fs-1 Purple py-2 RoundedLess">Resume</h1>
+        <h1 className="fs-1 DarkBlue Light py-2 RoundedLess">Resume</h1>
         <p className="fs-5 Pink RoundedLess Light py-2"><center>Click the button below to download my resume!</center> 
           <br/> 
           I pride myself on my skills and my intellect, and I believe I can solve any problem that's thrown my way. I'm tenacious, and believe that where there's a will, there's a way. 

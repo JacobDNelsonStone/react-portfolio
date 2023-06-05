@@ -18,7 +18,7 @@ function Contact(props) {
     console.log(formData)
     console.log('==========', formData.message)
     
-    if( formData.email == '' || formData.fname == ''  || formData.lname == ''  || formData.message == '' ) {
+    if( formData.email === '' || formData.fname === ''  || formData.lname === ''  || formData.message === '' ) {
       alert("all form fields must be filled out :)")
     } else {
       alert('Thank you for submitting your contact info!')
