@@ -1,12 +1,12 @@
 import { Button, Container, Row } from "react-bootstrap"
 // import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
 // import myResume from '../843F6127-6EB2-45EC-B015-63DDD6F643F3.pdf';
-
+import pdf from '../files/843F6127-6EB2-45EC-B015-63DDD6F643F3.pdf'
 function Resume() {
   // const docs = [{ uri: require("../jacobnelsonstoneresume.pdf") }];
 
   function handleButtonClick() {
-    fetch('myresume.pdf')
+    fetch(pdf)
       .then(response => response.blob())
       .then(resume => {
         const fileURL = window.URL.createObjectURL(resume);
