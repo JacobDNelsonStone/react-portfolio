@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.aab6ff5c.css",
-    "main.js": "/react-portfolio/static/js/main.31028a9d.js",
+    "main.js": "/react-portfolio/static/js/main.ec723324.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/about-me-portrait.JPG": "/react-portfolio/static/media/about-me-portrait.a2a58735e6d1fc59873f.JPG",
     "static/media/react-portfolio-sc.png": "/react-portfolio/static/media/react-portfolio-sc.2f104aba39eae68950e4.png",
+    "static/media/843F6127-6EB2-45EC-B015-63DDD6F643F3.pdf": "/react-portfolio/static/media/843F6127-6EB2-45EC-B015-63DDD6F643F3.62c4a4cfa60148e44528.pdf",
     "static/media/weatherapisc.png": "/react-portfolio/static/media/weatherapisc.e8c6802f4ed4b8ffa2fe.png",
     "static/media/gp1-logo.png": "/react-portfolio/static/media/gp1-logo.44760e01b3cf0a21c422.png",
     "static/media/unit-12-homework-sc.png": "/react-portfolio/static/media/unit-12-homework-sc.1437e0be469ed77d65de.png",
     "static/media/gp2-sc.png": "/react-portfolio/static/media/gp2-sc.4a43a24ff0a240226059.png",
     "index.html": "/react-portfolio/index.html",
     "main.aab6ff5c.css.map": "/react-portfolio/static/css/main.aab6ff5c.css.map",
-    "main.31028a9d.js.map": "/react-portfolio/static/js/main.31028a9d.js.map",
+    "main.ec723324.js.map": "/react-portfolio/static/js/main.ec723324.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aab6ff5c.css",
-    "static/js/main.31028a9d.js"
+    "static/js/main.ec723324.js"
   ]
 }
