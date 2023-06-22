@@ -10,11 +10,11 @@ function Footer(props) {
     <Container className='mt-5 footer Purple Light py-2 mx-0' style={{minWidth: '100%'}}>
       <Navbar expand="lg">
         <Container>
-          <Navbar.Brand className='Light' style={{ fontSize: '2rem' }}>Jacob Nelson-Stone</Navbar.Brand>
+          <Navbar.Brand style={{ fontSize: '2rem', color: "white" }}>Jacob Nelson-Stone</Navbar.Brand>
             <Nav className="me-auto d-flex flex-row">
-              <Nav.Link href="https://github.com/JacobDNelsonStone" className='Light px-2'>GitHub</Nav.Link>
-              <Nav.Link href="https://LinkedIn.com" className='Light px-2'>LinkedIn</Nav.Link>
-              <Nav.Link href="#resume" className='Light px-2'>Resume</Nav.Link>
+              <Nav.Link href="https://github.com/JacobDNelsonStone" target="_blank" className='text-light px-2 ActiveLink'>GitHub</Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/jacob-nelson-stone-7a290627a/" target="_blank" className='text-light px-2 ActiveLink'>LinkedIn</Nav.Link>
+              <Nav.Link href="/Resume" className='text-light px-2 ActiveLink'>Resume</Nav.Link>
             </Nav>
         </Container>
       </Navbar>
