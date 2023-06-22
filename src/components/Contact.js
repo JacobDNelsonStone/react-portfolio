@@ -27,12 +27,14 @@ function Contact(props) {
 
     if (formData.email === '' || formData.fullname === '' || formData.message === '') {
       alert("all form fields must be filled out :)")
-    } else if (formData.email != /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/){
-      alert("Email must be a valid email address.")
-    } else {
-      emailjs.sendForm('service_4bozhi9', 'template_kmx5l68', form.current, 'UQnsDdqDQWOIIrFZp')
+    } 
+    //   else if (formData.email != /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ ){
+    //   alert("Email must be a valid email address.")
+    // } 
+      else {
+      emailjs.sendForm('service_4bozhi9', 'template_3lrq2or', form.current, 'UQnsDdqDQWOIIrFZp')
         .then((result) => {
-          alert('Thank you for submitting your contact info!')
+          alert('Thank you for sending me a message!')
           console.log(result.text)
           // show the user a success message
         }, (error) => {
@@ -69,14 +71,14 @@ function Contact(props) {
               type="text"
               name="email"
               value={formData.email}
-              placeholder="Enter email"
+              placeholder="Enter a valid email address"
               onChange={handleInputChange}
             />
             <Form.Text className="text-muted">
             </Form.Text>
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicMessage">
-            <Form.Label>Send a Short Message to Me</Form.Label>
+            <Form.Label>Send a short message to me</Form.Label>
             <Form.Control
               required
               type="text"
