@@ -122,7 +122,7 @@ body {
   color: black !important;
   background-color: azure !important;
   border-radius: 16px !important;
-  animation: fadeIn 5s !important;
+  animation: 3s linear fadeIn !important;
 }
 
 .Rounded {
@@ -149,6 +149,13 @@ body {
 
 .nodecor {
   text-decoration: none;
+}
+
+.footerLinkPadding {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 @media screen and (max-width: 576px) {

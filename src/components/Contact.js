@@ -38,7 +38,7 @@ function Contact(props) {
           console.log(error)
           // show the user an error
         })
-      window.location.reload()
+      setFormData({email: "", fullname: "", message: ''})
     }
   }
 
