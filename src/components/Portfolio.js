@@ -36,10 +36,10 @@ function Portfolio(props) {
             <Project repo="https://github.com/JacobDNelsonStone/open-weather-api-web-app" image={weatherApiSC} deplo="https://jacobdnelsonstone.github.io/open-weather-api-web-app/" title="5-Day Weather Forecast Dashboard">
             </Project>
           </Row>
-          <Row className=" my-4 col-xl-4 col-12">
+          {/* <Row className=" my-4 col-xl-4 col-12">
             <Project repo="https://github.com/JacobDNelsonStone/business-dashboard-react" image={reactportfolioSC} deplo="https://business-dashboard-group5.herokuapp.com/" title="All In One Business DashBoard (WIP)">
             </Project>
-          </Row>
+          </Row> */}
         </Container>
       </div>
     </FadeIn>
